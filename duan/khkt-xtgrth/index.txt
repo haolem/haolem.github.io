@@ -1,9 +1,0 @@
-[SECTION  I]: SƠ LƯỢC
-Dự án "Xe thu gom rác tự hành" là một dự án Khoa học - Kỹ thuật về lĩnh vực Kỹ thuật môi trường. Dự án được thực hiện bởi học sinh Trường Trung học Phổ thông Nguyễn Đình Chiểu, Bến Tre.
-[SECTION II]: PHÁP LÝ VÀ GIẤY PHÉP
-Dự án "Xe thu gom rác tự hành" là dự án dự thi cuộc thi Khoa học - Kỹ thuật dành cho học sinh trung học phổ thông. Dự án bao gồm phần cứng và phần mềm:
- - Phần cứng: Xe thu gom rác (bao gồm tất cả các thành phần cấu tạo nên chiếc xe)
- - Phần mềm: Phần mềm điều khiển, mã nguồn phần mềm điều khiển, phần mềm quản lý.
-
-Phần mềm ứng dụng được viết trên giấy phép GNU GPL 3.0, tuân thủ quyền tác giả.
-Phần cứng hệ thống tuân thủ theo Luật Sở hữu Trí tuệ của Việt Nam.
