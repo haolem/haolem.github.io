@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HaoLeM Main Page</title>
+    <link rel="stylesheet" href="/web/css/pico.css">
+    <link rel="stylesheet" href="/web/css/index.css">
+</head>
+<body>
+    <nav class="header container-fluid">
+        <ul>
+            <li><strong style="font-size: 1.75rem;">HaoLeM</strong></li>
+        </ul>
+        <ul>
+            <li><a href="/index.html" class="secondary" >Trang chính</a></li>
+            <li><a href="#" class="secondary" >Về tôi</a></li>
+            <li><a href="#" class="secondary" >Dự án</a></li>
+            <li><a href="#" class="secondary" >Liên lạc</a></li>
+            <li><button class="outline secondary" style="color: #a0a6eb" ><b>Hỗ trợ</b></button></li>
+        </ul>
+    </nav>
+    <nav class="sub container-fluid" aria-label="breadcrumb" style="background: rgba(255, 255, 255, 0.01);">
+        <ul>
+            <li>Trang chủ</li>
+            <li>Hỗ trợ</li>
+        </ul>
+    </nav>
+    <br>
+    <div class="container-fluid">
+        <button onclick="document.getElementById('dialog').open = true">Donate</button>
+        <dialog id="dialog">
+            <article>
+                <header>
+                <button aria-label="Close" rel="prev" onclick="document.getElementById('dialog').open = false"></button>
+                <p>
+                    <strong>Cảm ơn bạn đã hỗ trợ!</strong>
+                </p>
+                </header>
+                <p>
+                Hiện tại, bạn không thể hỗ trợ tôi bằng tiền do vấn đề liên quan.
+                </p>
+                <p>Tôi rất cảm kích tấm lòng của bạn!</p>
+                <footer>
+                    <button type="button" class="" style="background-color: #ff2c2c; border-color: #ff1a1a;" onclick="document.getElementById('dialog').open = false">Đã rõ</button>
+                </footer>
+            </article>
+        </dialog>
+    </div>
+</body>
+</html>
