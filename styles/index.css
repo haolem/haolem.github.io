@@ -1,0 +1,5 @@
+body nav li a[href="/index.html"] {
+  font-weight: bold;
+  pointer-events: none;
+  cursor: default;
+}

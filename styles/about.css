@@ -1,0 +1,5 @@
+body nav li a[href="/about.html"] {
+  font-weight: bold;
+  pointer-events: none;
+  cursor: default;
+}
