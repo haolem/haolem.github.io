@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "/styles/color-chemes.css";
+
+
+/* Component: Header */
+
+.header {
+    font-family: "Open Sans", sans-serif;
+    color: var(--color-foreground);
+    background-color: var(--color-surface);
+    padding: 5px 10px 5px 10px;
+    max-height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2.logo {
+    margin: 0;
+    font-size: 1.75rem;
+    padding: 0 15px 0 15px;
+}
+
+.left {
+    display: flex;
+}
+
+.left .nav {
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: 1px solid #acacac;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-height: 38px;
+}
+
+.left .nav a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    color: var(--color-muted);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 10px;
+    max-height: 36px;
+    padding: 5px 10px 5px 10px;
+    &:hover {
+        border-bottom: 2px solid #adadad;
+    }
+}
+
+/* Components: Footer */
+
+.footer {
+    background-color: var(--color-surface);
+    height: 100px;
+}
+
+.footer hr {
+    height: 0;
+    margin: 0 5px;
+    border: 0;
+    border-top: 1px solid #dddddd18;
+    color: inherit;
+}
+
+.footer .content-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer .content-contact a {
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-foreground);
+}

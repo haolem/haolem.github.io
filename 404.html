@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HaoLeM</title>
     <link rel="stylesheet" href="/styles/pico.css">
-    <link rel="stylesheet" href="/styles/index.css">
 </head>
 <body>
     <noscript>
@@ -30,40 +29,6 @@
             </footer>
         </article>
     </dialog>
-    <dialog id="system-login">
-        <article>
-            <header>
-            <button aria-label="Close" rel="prev"></button>
-            <p>
-                <strong aria-busy="true">ĐĂNG NHẬP</strong>
-            </p>
-            </header>
-            <input type="text" name="text" placeholder="Tên người dùng" aria-label="Tên người dùng">
-            <input type="password" name="password" placeholder="Mật khẩu" aria-label="Mật khẩu">
-            <label>
-                <input type="checkbox" name="Show password" id="show-passwd">
-                Hiện mật khẩu
-            </label>
-            <hr>
-            <p>Nhập mã truy cập:</p>
-            <div role="group">
-                <input type="text" id="stp1" name="text" placeholder="XXXX" aria-label="" maxlength="4" value="6A22">
-                <input type="text" id="stp2" name="text" placeholder="XXXX" aria-label="" maxlength="4" value="9RP5">
-                <input type="text" id="stp3" name="text" placeholder="XXXX" aria-label="" maxlength="4" value="U892">
-                <input type="text" id="stp4" name="text" placeholder="XXXX" aria-label="" maxlength="4" value="RKAA">
-                <button>Kiểm</button>
-            </div>
-            <button>Đăng nhập</button>
-            <footer>
-                <p><i>Chào mừng đến với <b>SW4CDPP</b>, đăng nhập đến cổng kết nối của bạn.</i></p>
-            </footer>
-        </article>
-    </dialog>
 </body>
-<script src="/functions/strict-requires/pako.js"></script>
-<script src="/functions/strict-requires/crypto.js"></script>
-<script src="/functions/strict-requires/webkit.js"></script>
-<script src="/functions/strict-requires/loadCustomComponents.js"></script>
-<script src="/functions/strict-requires/loadHandlerWebState.js"></script>
-<script src="/functions/hsenc.js"></script>
+<script src="/scripts/required/webui.js"></script>
 </html>
