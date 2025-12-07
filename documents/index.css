@@ -149,5 +149,6 @@ body main .content form button[type="submit"] {
 
 body footer {
     grid-area: footer;
-    background-color: #8c96b6;
+    background-color: #9fa2aa;
+    padding: 10px;
 }
