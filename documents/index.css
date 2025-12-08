@@ -2,153 +2,134 @@
 
 html, body {
     width: 100%;
-    height: 100%;
-    max-height: 100vh;
-    margin: 0;
-    overflow-x: hidden;
+    height: 100vh;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
 }
 
-html {
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.preconfig {
+    outline: none;
+    resize: none;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
-    font-size: 1rem;
-    font-family: 'Open Sans', sans-serif;
+    margin: 0;
     display: grid;
     grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-    grid-template-rows: 80px 1fr 100px;
+        "header header"
+        "image content"
+        "main main";
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 70px auto 1fr;
 }
 
-body header {
+header {
     grid-area: header;
-    text-align: center;
     background-color: #6181e9;
 }
 
-body main {
-    grid-area: main;
-    display: grid;
-    grid-template-areas: "image content";
-    grid-template-columns: minmax(400px, 1fr) 2fr;
-}
-
-body main .image {
+.image {
     grid-area: image;
-    height: calc(100% - 10px);
-    max-height: calc(100vh - 180px);
-    margin: 5px 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-@media (min-width: 1500px) {
-    body main {
-        grid-template-columns: 450px 1fr;
-    }
-}
-
-body main .image img {
-    max-width: 380px;
-    max-height: calc((380px / 3) * 4);
+.image img {
+    width: 340px;
     border-radius: 3px;
 }
 
-body main .content {
+.content {
     grid-area: content;
-    margin: 5px 5px;
-    padding: 5px 10px;
-    border-left: 1px solid #a0a0a0;
+    margin: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #797979;
 }
 
-body main .content p {
-    text-align: justify;
+.content table caption {
+    border-bottom: 1px solid #363636;
+    padding: 5px;
 }
 
-body main .content details table {
-    table-layout: fixed;
+.content table td {
+    padding: 5px;
 }
 
-body main .content details table, caption {
-    border: 1px solid;
+.content table td.inf {
+    width: 150px;
+    font-weight: 600;
+    border-right: 1px dashed;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    grid-area: main;
+    padding: 10px;
+}
+
+main details {
+    padding: 10px;
+}
+
+main table {
     max-width: 600px;
 }
 
-body main .content table tr td {
-    margin: 3px 3px;
-}
-
-body main .content table.kqht tr td {
+main table td {
+    padding: 5px;
     text-align: center;
 }
 
-body main .content table tr td.inf {
-    text-align: end;
+main table td.inf {
+    width: 150px;
+    font-weight: 500;
+}
+
+main form {
+    padding: 5px;
+    border: 1px solid #797979;
+}
+
+main form label {
     font-weight: 600;
-    width: 100px;
-    min-width: 100px;
-    max-width: 100px;
-    padding-right: 5px;
-    border-right: 1px solid;
 }
 
-body main .content table.kqht tr th {
-    border: 1px solid;
-}
-
-body main .content form {
-    border: 1px solid;
-    padding: 5px 5px;
-}
-
-body main .content form label {
-    width: 100px;
-}
-
-body main .content form input {
+main form input {
     border-radius: 0;
-    outline: none;
+    padding: 2px 5px;
     border: 1px solid;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
 }
 
-body main .content form option {
-    border-radius: 0;
-    outline: none;
-    border: 1px solid;
-    font-family: 'Open Sans', sans-serif;
+main form select {
+    padding: 2px 5px;
     font-size: 1rem;
+    border: 1px solid;
+    border-radius: 0;
+    appearance: none;
 }
 
-body main .content form textarea {
-    resize: none;
-    outline: none;
+main form textarea {
     border-radius: 0;
     border: 1px solid;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
 }
 
-body main .content form button[type="submit"] {
+main form button[type="submit"] {
+    border: 0;
     border-radius: 3px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
     font-size: 22px;
     padding: 10px 10px;
+    color: #ffffff;
     background-color: #ED4245;
-    border: none;
-    outline: none;
-}
-
-body footer {
-    grid-area: footer;
-    background-color: #9fa2aa;
-    padding: 10px;
 }
