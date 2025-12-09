@@ -127,9 +127,11 @@ main form textarea {
 
 main form button[type="submit"] {
     border: 0;
+    cursor: pointer;
     border-radius: 3px;
     font-size: 22px;
     padding: 10px 10px;
     color: #ffffff;
     background-color: #ED4245;
 }
+
