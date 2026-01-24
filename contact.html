@@ -1,20 +1,27 @@
+<!-- {{ version: v1 }} -->
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi-VN" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HaoLeM | Contact</title>
-    <link rel="stylesheet" href="/styles/pico.css">
-    <link rel="stylesheet" href="/styles/contact.css">
+    <title>HaoLeM | Liên hệ</title>
+    <link rel="shortcut icon" href="/r/favicon.ico" type="image/x-icon">
+    <!-- {{ link:css color-chemes.css }} -->
+    <!-- {{ link:css preset.css }} -->
+    <!-- {{ link:css base.css }} -->
 </head>
 <body>
-    <noscript>
-        <code><b style="color: red">ERR </b>  Browser not allow/support JavaScript which strictly require to run the website!</code>
-    </noscript>
-    <!-- Chặn xử lý nếu không có JavaScript -->
-    <swd-header></swd-header>
+    {{ .load Header ? (true) }}
+    <main>
+        <div class="ntc">
+            {{ .load NoLoad ? (true) }}
+        </div>
+        <div class="content">
+            
+        </div>
+    </main>
+    {{ .load Footer ? (true) }}
 </body>
-<script src="/functions/strict-requires/webkit.js"></script>
-<script src="/functions/strict-requires/loadCustomComponents.js"></script>
-<script src="/functions/strict-requires/loadHandlerWebState.js"></script>
+<script type="module" src="/core/env.js"></script>
+<script type="module" src="/core/webui.js"></script>
 </html>

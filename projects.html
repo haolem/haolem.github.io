@@ -1,26 +1,27 @@
+<!-- {{ version: v1 }} -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi-VN" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>&nbsp;&nbsp;&nbsp;HaoLeM | Dự án&nbsp;&nbsp;&nbsp;</title>
-    <link rel="stylesheet" href="/styles/home.index.css">
+    <title>HaoLeM | Dự án</title>
+    <link rel="shortcut icon" href="/r/favicon.ico" type="image/x-icon">
+    <!-- {{ link:css color-chemes.css }} -->
+    <!-- {{ link:css preset.css }} -->
+    <!-- {{ link:css base.css }} -->
 </head>
 <body>
-    <swd-header></swd-header>
+    {{ .load Header ? (true) }}
     <main>
-        <div class="msg"> ⚠️ Chưa có dự án nào ở đây!</div>
-        <div class="nav-show" id="navShow"> <b>Dự án</b> / <b style="color:#f33737">Không tìm thấy</b></div>
+        <div class="ntc">
+            {{ .load NoItem ? (true) }}
+        </div>
         <div class="content">
-            <center>
-                <br>
-                <br>
-                <i>-- Thư mục trống --</i>
-                <p>Điều này có thể xảy ra do không có dự án hoặc là dự án bị ẩn/không được liệt kê trong trang web.</p>
-            </center>
+            
         </div>
     </main>
-    <swd-footer></swd-footer>
+    {{ .load Footer ? (true) }}
 </body>
-<script src="/scripts/required/webui.js"></script>
+<script type="module" src="/core/env.js"></script>
+<script type="module" src="/core/webui.js"></script>
 </html>

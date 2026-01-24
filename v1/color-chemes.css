@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:wght@400&display=swap');
+
+:root {
+    --font-family-primary: 'Open Sans', sans-serif;
+    --font-family-code: 'Google Sans Code', monospace;
+    --font-size-base: 1rem;
+    --font-size-large: 1.125rem;
+}
+
+
+:root {
+    --color-bg-base: #FFFFFF;
+    --color-bg-sidebar: #F0F2F5;
+    --color-bg-header: #E5E7EB;
+    --color-bg-elevated: #FFFFFF;
+    --color-divider: #D1D5DB;
+    --color-text-primary: #1F2937;
+    --color-text-secondary: #6B7280;
+    --color-text-faded: #9CA3AF;
+    --color-accent-primary: #5865F2;
+    --color-accent-secondary: #007ACC;
+    --color-btn-normal: #E5E7EB;
+    --color-btn-hover: #D1D5DB;
+    --color-btn-danger: #ED4245;
+    --color-btn-disabled: #F9FAFB;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg-base: #121214;
+        --color-bg-sidebar: #1B1B1F;
+        --color-bg-header: #232328;
+        --color-bg-elevated: #2C2C32;
+        --color-divider: #3D414D;  
+        --color-text-primary: #F2F3F5;
+        --color-text-secondary: #B9BBBE;
+        --color-text-faded: #72767E;
+        --color-btn-normal: #40444B;
+        --color-btn-hover: #7289DA;
+        --color-btn-danger: #ED4245;
+        --color-btn-disabled: #32353B;
+    }
+}
+
+
+[data-theme="light"] {
+   
+    --color-bg-base: #FFFFFF;
+    --color-bg-sidebar: #F0F2F5;
+    --color-bg-header: #E5E7EB;
+    --color-bg-elevated: #FFFFFF;
+    --color-divider: #D1D5DB;
+
+    --color-text-primary: #1F2937;
+    --color-text-secondary: #6B7280;
+    --color-text-faded: #9CA3AF;
+
+    --color-btn-normal: #E5E7EB;
+    --color-btn-hover: #D1D5DB;
+    --color-btn-danger: #ED4245;
+    --color-btn-disabled: #F9FAFB;
+}
+
+[data-theme="dark"] {
+    --color-bg-base: #121214;
+    --color-bg-sidebar: #1B1B1F;
+    --color-bg-header: #232328;
+    --color-bg-elevated: #2C2C32;
+    --color-divider: #3D414D;
+    --color-text-primary: #F2F3F5;
+    --color-text-secondary: #B9BBBE;
+    --color-text-faded: #72767E;
+    --color-btn-normal: #40444B;
+    --color-btn-hover: #7289DA;
+    --color-btn-danger: #ED4245;
+    --color-btn-disabled: #32353B;
+}

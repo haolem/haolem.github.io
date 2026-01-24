@@ -1,19 +1,28 @@
+<!-- {{ version: v1 }} -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi-VN" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>&nbsp;&nbsp;&nbsp;HaoLeM | Trang chủ&nbsp;&nbsp;&nbsp;</title>
-    <link rel="stylesheet" href="/styles/home.index.css">
+    <title>HaoLeM | Trang chủ</title>
+    <link rel="shortcut icon" href="/r/favicon.ico" type="image/x-icon">
+    <!-- {{ link:css color-chemes.css }} -->
+    <!-- {{ link:css preset.css }} -->
+    <!-- {{ link:css base.css }} -->
+    <!-- {{ link:css index.css }} -->
 </head>
 <body>
-    <swd-header></swd-header>
+    {{ .load Header ? (true) }}
     <main>
-        <div class="wel">
-            <h1 style="padding-left: 20px;" class="typewriter-eff"></h1>
+        <div class="ntc"></div>
+        <div class="content">
+            <div class="wel">
+                <h1 style="font-size:3rem;margin:0;">XIN CHÀO BẠN!</h1>
+            </div>
         </div>
     </main>
-    <swd-footer></swd-footer>
+    {{ .load Footer ? (true) }}
 </body>
-<script src="/scripts/required/webui.js"></script>
+<script type="module" src="/core/env.js"></script>
+<script type="module" src="/core/webui.js"></script>
 </html>

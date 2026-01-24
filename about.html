@@ -1,17 +1,33 @@
+<!-- {{ version: v1 }} -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi-VN" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>&nbsp;&nbsp;&nbsp;HaoLeM | Giới thiệu&nbsp;&nbsp;&nbsp;</title>
-    <link rel="stylesheet" href="/styles/home.index.css">
+    <title>HaoLeM | Giới thiệu</title>
+    <link rel="shortcut icon" href="/r/favicon.ico" type="image/x-icon">
+    <!-- {{ link:css color-chemes.css }} -->
+    <!-- {{ link:css preset.css }} -->
+    <!-- {{ link:css base.css }} -->
+    <!-- {{ link:css about.css }} -->
 </head>
 <body>
-    <swd-header></swd-header>
+    {{ .load Header ? (true) }}
     <main>
-        <div class="msg"> ⚠️ Chưa có thông tin nào được khai báo / hiển thị!</div>
+        <div class="ntc"></div>
+        <div class="content">
+            <div class="cn" style="padding:20px;">
+                <h2>Chào mừng bạn đến với trang web của tôi!</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sơ lược về bản thân, tôi hiện tại vẫn đang là học sinh cấp 3 đang sinh sống và học tập tại Việt Nam. Tôi đang sống ở Vĩnh Long (Bến Tre cũ), tôi có một niềm đam mê với lập trình ứng dụng và lập trình thi đấu. <br><br>
+                Tôi có biết sử dụng các ngôn ngữ lập trình thông dụng như: <b>Python 3</b>, <b>C++ 17</b>, <b>JavaScript</b>, <b>Go</b>, ... <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bản thân tôi hay có sở thích tự tạo cho mình một ứng dụng sao cho đúng ý của mình nhất và dành hàng giờ để tối ưu nó. Tuy khá vất vả nhưng nó mang lại cho tôi được cảm giác thành tựu to lớn và là động lực để tôi theo đuổi đam mê của mình.</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hiện nay với sự phát triển nhanh của Trí tuệ nhân tạo (AI), ngành lập trình đang có các chuyển biến khá lớn, các mô hình AI đã khá giỏi trong việc lập trình và khiến cho những lập trình viên "thuần túy" đang dần bị lép vế trong cuộc đua phát triển của công nghệ thông tin. Nhưng chính sự phát triển đó cũng mở ra một số cơ hội mới về đào tạo AI, và sử dụng AI hiệu quả, lúc này bạn không cần quá giỏi về code mà bạn chỉ cần biết vận dụng và sử dụng AI hiệu quả thì bạn đã có thể tạo ra rất nhiều thứ và nhiều dự án mới có ứng dụng cao. Và đó cũng là thứ mà tôi đang hướng đến, tiếp cận AI và sử dụng AI hiệu quả rất có ích trong xã hội hiện nay, nó không chỉ là phong trào mà nó là một công cụ, một vũ khí giúp ta thích nghi và phát triển trong thời đại số với nhiều chuyển biến thường xuyên và to lớn. <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nhưng tôi cũng nhận thức được rằng, với vốn kiến thức hiện tại của mình thì nó chỉ như muối bỏ biển mà thôi, vì vậy tôi luôn cố gắng và không ngừng học hỏi thêm nhiều điều mới để phát triển kỹ năng cho bản thân mình và là hành trang cho cuộc sống trưởng thành.</p>
+            </div>
+        </div>
     </main>
-    <swd-footer></swd-footer>
+    {{ .load Footer ? (true) }}
 </body>
-<script src="/scripts/required/webui.js"></script>
+<script type="module" src="/core/env.js"></script>
+<script type="module" src="/core/webui.js"></script>
 </html>

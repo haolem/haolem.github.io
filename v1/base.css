@@ -1,0 +1,99 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: 50px 1fr 120px;
+    margin: 0;
+}
+
+.header {
+    grid-area: header;
+    background-color: var(--color-bg-header);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.2em;
+}
+
+.header .left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header .left .logo {
+    padding-right: 20px;
+    border-right: 1px solid var(--color-divider);
+}
+
+.header .left .nav {
+    justify-content: center;
+    height: 50px;
+}
+
+.header .left .nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    height: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    transition: background-color 0.3s, font-weight 0.3s;
+    &:hover {
+        border-bottom: 3px solid var(--color-accent-secondary);
+    }
+}
+
+main {
+    grid-area: main;
+    background-color: var(--color-bg-base);
+    overflow-y: auto;
+}
+
+
+.footer {
+    grid-area: footer;
+    background-color: var(--color-bg-header);
+    display: grid;
+    grid-template-areas: "link" "copyright";
+    grid-template-rows: 1fr 50px;
+}
+
+.footer .link {
+    grid-area: link;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid var(--color-divider);
+    margin: 0 20px 0 20px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+}
+
+.footer .link a {
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+    transition: text-decoration 0.2s;
+}
+
+.footer .copyright {
+    grid-area: copyright;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    color: var(--color-text-faded);
+}
