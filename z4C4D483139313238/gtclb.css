@@ -1,0 +1,42 @@
+
+body {
+    overflow-x: hidden;
+}
+
+.content {
+    padding: 1em;
+}
+
+.content span {
+    font-size: 1.2rem;
+    color: var(--color-text-faded);
+    display: block;
+    text-align: right;
+}
+
+.content hr {
+    border: none;
+    border-top: 1px solid var(--color-divider);
+    margin: 1em 0;
+}
+
+details {
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-divider);
+    border-radius: 4px;
+    margin: 1em 0;
+}
+
+details summary {
+    -webkit-user-select: none !important;
+    user-select: none !important;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.7em;
+    background-color: var(--color-bg-tertiary);
+    border-bottom: 1px solid var(--color-divider);
+}
+
+details > *:not(summary) {
+    padding: 0.75em 1em;
+}

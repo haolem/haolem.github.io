@@ -1,0 +1,20 @@
+<!-- {{ version: v1 }} -->
+<!DOCTYPE html>
+<html lang="vi-VN" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu CLB</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/vi/thumb/d/d5/Logo_tr%C6%B0%E1%BB%9Dng_THPT_Nguy%E1%BB%85n_%C4%90%C3%ACnh_Chi%E1%BB%83u_B%E1%BA%BFn_Tre.svg/250px-Logo_tr%C6%B0%E1%BB%9Dng_THPT_Nguy%E1%BB%85n_%C4%90%C3%ACnh_Chi%E1%BB%83u_B%E1%BA%BFn_Tre.svg.png" type="image/png">
+    <!-- {{ link:css color-chemes.css }} -->
+    <!-- {{ link:css preset.css }} -->
+    <link rel="stylesheet" href="./gtclb.css">
+</head>
+<body>
+    {{ .load OverlayBlock ? (desc) }}
+    {{ .load 4C4D483139313238 ? (!desc) }}
+</body>
+<script type="module" src="/core/env.js"></script>
+<script type="module" src="./rs.js"></script>
+<script type="module" src="/core/webui.js"></script>
+</html>
