@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HaoLeM</title>
-    <link rel="stylesheet" href="/pico.css">
+    <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.min.css" rel="stylesheet">
 </head>
 <body>
     <noscript>
@@ -12,20 +12,18 @@
     </noscript>
     <!-- Chặn xử lý nếu không có JavaScript -->
     <dialog id="default-error-notice" open>
-        <article>
-            <header>
+        <article style="border: 1px solid #6b6b6b; border-radius: 0px;">
+            <header style="border-bottom: 1px solid #777777cb">
             <!-- <button aria-label="Close" rel="prev"></button> -->
             <p>
                 <strong aria-busy="true">BẠN ĐANG BỊ LẠC?</strong>
             </p>
             </header>
-            <p>
-            Trang này không tồn tại!
-            </p>
             <p>Có vẻ bạn đã truy cập sai đường dẫn hoặc tài liệu đã bị xóa.</p>
-            <p><b><a href="/">Quay về trang chủ</a></b></p>
-            <footer>
-                <p><i>Nếu bạn cho rằng đây là lỗi, hãy liên hệ đến quản trị viên trang web.</i></p>
+            <i style="text-align: left;max-width: 400px;">Nếu bạn cho rằng đây là lỗi, hãy liên hệ đến quản trị viên trang web.</i>
+            
+            <footer style="display: flex; align-items: center; justify-content: space-between;border-top: 1px solid #777777ca">
+                <p><b><a href="/" style="text-decoration: none;">Quay về trang chủ</a></b></p>
             </footer>
         </article>
     </dialog>
